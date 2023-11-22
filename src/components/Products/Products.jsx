@@ -2,20 +2,20 @@ import React from 'react';
 import { Grid } from "@mui/material";
 
 import Product from './Product/Product';
+import useStyles from './styles';
 
-const products = [
-    { id: 1, name: "Shoe", description: "Running Shoes", price: "$50" },
-    { id: 1, name: "Bag", description: "Nice bags", price: "$20" },
-    { id: 1, name: "Cup", description: "Quality cups", price: "$6" },
-]
 
-const Products = () => {
+const Products = ({ products, onAddToCart }) => {
+    const classes = useStyles();
+
+    console.log(products);
     return (
-        <main>
+        <main className={ classes.content }>
+            <div className={ classes.toolbar } />
             <Grid container justify="center" spacing={ 4 }>
                 { products.map((product) => (
                     <Grid item key={ product.id } xs={ 12 } sm={ 6 } md={ 4 } lg={ 3 }>
-                        <Product product={ product } />
+                        <Product product={ product } onAddToCart={ onAddToCart } />
                     </Grid>
                 )) }
             </Grid>
