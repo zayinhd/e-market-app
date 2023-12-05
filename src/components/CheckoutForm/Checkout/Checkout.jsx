@@ -87,7 +87,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
 
     const Form = () => activeStep === 0
         ? <AddressForm checkoutToken={ checkoutToken } next={ next } />
-        : <PaymentForm shipping={ shippingData } checkoutToken={ checkoutToken } nextStep={ nextStep } backStep={ backStep } onCaptureCheckout={ onCaptureCheckout } timeout={ timeout } />
+        : <PaymentForm shippingData={ shippingData } checkoutToken={ checkoutToken } nextStep={ nextStep } backStep={ backStep } onCaptureCheckout={ onCaptureCheckout } timeout={ timeout } />
 
     return (
         <>
