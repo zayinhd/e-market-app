@@ -1,7 +1,7 @@
 {
     "name": "e-market-app-1",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "dependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@chec/commerce.js": "^2.8.0",
@@ -70,5 +70,9 @@
         "webpack": "^5.89.0",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
-    }
+    },
+    "main": "index.js",
+    "repository": "https://github.com/zayinhd/E-Market-App.git",
+    "author": "zayin <zayinm300@gmail.com>",
+    "license": "MIT"
 }
