@@ -16,7 +16,7 @@ Install the project dependencies using npm:
 ## Set Up Environment Variables
 Create a new file named `.env` in the root of your project and add the following content:
 
-### `REACT_APP_CHEC_PUBLIC_KEY = 
+`REACT_APP_CHEC_PUBLIC_KEY = 
 REACT_APP_STRIPE_PUBLIC_KEY = `
 
 Replace the placeholder values with your actual credentials.
